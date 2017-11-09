@@ -106,7 +106,7 @@ for ($day = 0; $day <= DAYS_PER_WEEK-1; ++$day)//foreach ($dromo_array as $day_d
   $day_teachers_temp = $day_teachers; //temporary table
 
   //echo "<br>";    fill the leave passengers and driver////////////////////////////////////////////////////
-  $cars_no = ceil(count($day_teachers)/5); //cars no per day
+  $cars_no = ceil(count($day_teachers)/4); //cars no per day
   for ($car = 0 ; $car < $cars_no; ++$car){
     $cars[$day][$car] = new Car();
   }
